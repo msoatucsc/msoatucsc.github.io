@@ -3,6 +3,8 @@
 
 <head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title> MSO UCSC </title>
 	<center>
 
@@ -13,19 +15,18 @@
 
 <body style="background-color: White">
 
-	<style>
-		p{margin: 2.5%; font-size: 18px; font-family: "Times New Roman", Times, serif}
-	</style>
+<center>
 
-	<center>
+</body>
 
-	</body>
 
-	<p> <a href="index.html"><img src="new.jpg" width="30%" height="30%"></a></p>
+	<p> <a href="index.html"><img src="logo.jpg" width="20%" height="10%"></a></p>
 
-	<center>
-	
 <style>
+	
+		p{margin: 2.5%; font-size: 18px; font-family: "Times New Roman", Times, serif}
+
+
 		div.scrollmenu {
 		    background-color: #ADD8E6;
 		    overflow: auto;
@@ -51,71 +52,111 @@
 
 		a:visited{color: blue;}
 
+		{box-sizing: border-box;}
 
-		* {
-	  box-sizing: border-box;
-	}
+		div.container {
+		  position: relative;
+		  width: 30%;
+		  max-width: 300px;
+		}
 
-	body {
-	  margin: 0;
-	  font-family: Arial;
-	  font-size: 15px;
-	}
+		div.img {
+		  display: block;
+		  width: 400px;
+		  height: 300px;
+		  object-fit: contain;
+		}
 
-	div.gallery {
-		    border: 1px solid #ccc;
-		    float: left;
-		    width: 30%;
-		    align-items: center;
-		    margin-left: 25px;
-		    margin-right: 13px;
-	}
+		div.overlay {
+		  position: absolute; 
+		  bottom: 0; 
+		  background: rgb(0, 0, 0);
+		  background: rgba(0, 0, 0, 0.5); 
+		  color: #f1f1f1; 
+		  width: 100%;
+		  transition: .7s ease;
+		  opacity:0;
+		  color: white;
+		  font-size: 20px;
+		  padding: 20px;
+		  text-align: center;
+		}
 
-	div.row::after {
+
+		div.text {
+		  color: white;
+		  font-size: 20px;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  -webkit-transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  transform: translate(-50%, -50%);
+		  text-align: center;
+		}
+
+
+		div.container:hover .overlay {
+		  opacity: 1;
+		}
+
+		div.column {
+		  float: left;
+		  width: 30.33%;
+		  padding: 5px;
+		}
+
+
+		div.row::after {
 		  content: "";
 		  clear: both;
 		  display: table;
-	}	
-</style>
-	
-<body>
+		}
 
-		<div class="scrollmenu">
+		div.gallery {
+		    border: 1px solid #ccc;
+		    float: left;
+		    width: 400px;
+		    align-items: center;
+		    margin-left: 25px;
+		    margin-right: 13px;
+		    margin-bottom: 50px;
+		}
+
+</style>
+
+
+<div class="scrollmenu">
 		  <a href="index.html">Home</a>
 		  <a href="officers.html">Officers</a>
 		  <a href="articles.html">Articles</a>
-		  <a href="slugs.html">Slugs into Science</a>
+		  <a href="sloogs.html">Slugs into Science</a>
 		  <a href="photos.html">Photos</a>
 		  <a href="contact.html">Contact</a>
-		</div>
+</div>
 
 		<p> Slugs into Science is one of our chapters' campaigns. The goal of Slugs into Science is to learn what sparked UCSC students (and professors!) interest in science! If you, or someone you might know, is interested in being featured please <a href="contact.html">contact us</a>! </p>
 
-	<hr>
 
-	
 <body>
 
 <div class="row">
-	<div class="gallery">
-	  <img src="dave.jpg" style="width:100%;">
-	  <div class="content">
+
+
+
+  <div class="column"><div class="gallery">
+    <div class="img"><img src="dave.jpg" style="width:100%"></div> <br/>
+    <div class="content">
 	    <h1>Dave Morales (c/o 2018)</h1>
 	    <p style="font-size: 15.3px">"Growing up, my mom would always share the anecdote of when her petition from the Philippines to the U.S. was approved in the middle of her education as a scholar at the Saint Louis University, which is known for its top-scoring Medical and Law students. She set aside her own aspirations of higher learning for the sake of the future family she would have in America. Keeping in mind the invaluable sacrifices that both my mom and dad have made, I urged myself to approach school with an unrivaled hunger and thirst for knowledge, sampling its many facets with enthusiasm and passion: writing, history, art, politics, math, and science. The subject of biology, however, intrigued me like no other starting from introductory Biology during my freshman year of high school. In college, my professors present what is already known. Then, I apply that knowledge to the work I do in the mammary gland research lab I volunteer at only to find out that what we do know is just barely the tip of the iceberg. Science doesn't sleep. And while the grind never ends, the demands of this very subject matter drives me to learn more each and every day. I want to pursue a career in the field of medical science, my little niche."</p>
 	  </div>
-	</div>
+  </div>
+	</div>	
 
-	<div class="gallery">
-	  <img src="joanna.jpg" style="width:95%; margin-top: 0%">
-	  <div class="content">
-	    <h1 style="margin-top: 0%;">Joanna Chung (c/o 2017)</h1>
-	    <p style="font-size: 23px; margin-top: 16.2%; margin-bottom: 16.5%">"I am a Business Management Economics major, however deep down I am very interested in science. Genetics is just fascinating to me. I am always amazed by how we can know so much about lives just by "decoding" the genes, cells. And from understanding all the mechanics behind lives, we can make the world a better place to live."</p>
-	  </div>
-	</div>
 
-	<div class="gallery">
-	  <img src="cherry3.jpg" style="width:100%; height: 90%;">
-	  <div class="content">
+  <div class="column"><div class="gallery">
+    <div class="img"><img src="cherry.jpg" style="width:100%"></div> <br/><br/><br/>
+    <div class="content">
 	    <h1 style="margin-top: 5px;">Cherry Ng (c/o 2018)</h1>
 	    <p style="font-size: 16.3px">"The core reason of why I'm interested in science and medicine is an untold one:
 	    	<br/>
@@ -131,86 +172,59 @@
 			<br/>
 		I want to combine drugs along with knowledge and empathy to heal."</p>
 	  </div>
-	</div>
+  </div>
+  	</div>
 
-	<br/>
-	<br/>
 
-	<div class="gallery">
-	  <img src="calvin.jpg" style="width:100%; margin-top: 0px;">
-	  <div class="content">
+  <div class="column"><div class="gallery">
+    <div class="img"> <img src="joanna.jpg" style="width:100%"> </div> <br/> <br/><br/><br/>
+     <div class="content">
+	    <h1 style="margin-top: 0%;">Joanna Chung (c/o 2017)</h1>
+	    <p style="font-size: 24.5px; margin-top: 16.2%; margin-bottom: 16.5%">"I am a Business Management Economics major, however deep down I am very interested in science. Genetics is just fascinating to me. I am always amazed by how we can know so much about lives just by "decoding" the genes, cells. And from understanding all the mechanics behind lives, we can make the world a better place to live."</p>
+	  </div>
+  </div>
+  	</div>
+
+  <div class="column"><div class="gallery">
+    <div class="img"><img src="calvin.jpg" style="width:100%"></div>
+    <div class="content">
 	    <h1 style="margin-top: 10.5%;">Calvin Lee (UCSD c/o 2018)</h1>
 	    <p style="font-size: 19px; margin-bottom: 5%;">“Psychology may not be a science major, but it can definitely be used in similar ways like STEM! As a psych major, I’ve come to really enjoy everything that I have learned through my time here at UCSC. I've always had an interest in mental health care, especially the stigma behind attending counseling and psychological services. Mental health disorders or whatever people like to label it as, are portrayed in the world as alien making those victims vulnerable to criticism just because of who they are! I want to push forward and desensitize the negative treatment placed on those who aren't considered “normal”. Many believe that psychology majors don’t do much, but I want to ignite my ambitions to serve those being misjudged and bring people to tolerate mental health issues!"</p>
 	  </div>
-	</div>
+  </div>
+  	</div>
 
-
-	<div class="gallery">
-	  <img src="sheena.jpg"  style="width:95%; margin-top: 0px;">
-	  <div class="content">
+  <div class="column"><div class="gallery">
+    <div class="img"><img src="sheena.jpg" style="width:100%"></div><br/><br/>
+    <div class="content">
 	    <h1 style="margin-top: 5%;">Sheena Kapour (c/o 2018)</h1>
 	    <p style="font-size: 21px; margin-bottom: 5%;">"Science is the vessel that allows us to comprehend the mysteries of the universe. These magical, esoteric phenomenon are made in practical components through science. The advancements in science have allowed us to challenge nearly every notion of life, and it has led a standard of living that would have been impossible to dream of. Science has the ability to empower while still remaining dynamic. From walking on the moon to sequencing the human genome, the bounds of discovery are endless. Thousands of lives have been saved and each day another new revolutionary advancement is discovered. "</p>
 	  </div>
-	</div>
+  </div>
+  	</div>
 
-	<div class="gallery">
-	  <img src="luke.jpg" style="width:100%; margin-top: 0px;">
-	  <div class="content">
+  <div class="column"><div class="gallery">
+   <div class="img"> <img src="luke.jpg" style="width:100%"></div><br/><br/><br/>
+   <div class="content">
 	    <h1 style="margin-top: 3%;">Luke Chen (c/o 2018)</h1>
 	    <p style="font-size: 25.7px; margin-bottom: 7%;">"Growing up, I was intrigued by the fact that science is still making advancements even up to today. Naturally, my passion for science grew and in high school, I thought the field of science could possibly influence what I do in the future someday. I then decided to pursue a science major to learn and see how much science has progressed as well as to fulfill my interest for the subject."</p>
 	  </div>
-	</div>
+  </div>
+  	</div>
 
-	<div class="gallery">
-	  <img src="luke.jpg" style="width:100%; margin-top: 0px;">
-	  <div class="content">
-	    <h1 style="margin-top: 3%;">Luke Chen (c/o 2018)</h1>
-	    <p style="font-size: 25.7px; margin-bottom: 7%;">"Growing up, I was intrigued by the fact that science is still making advancements even up to today. Naturally, my passion for science grew and in high school, I thought the field of science could possibly influence what I do in the future someday. I then decided to pursue a science major to learn and see how much science has progressed as well as to fulfill my interest for the subject."</p>
-	  </div>
-	</div>
-
-
-	 <div class="gallery">
-	   <img src="diana1.jpg" style="width:100%; margin-top: 0px;">
-	   <div class="content">
+  <div class="column"><div class="gallery">
+    <div class="img"><img src="diana1.jpg" style="width:100%"></div> <br/>
+    <div class="content">
 	      <h1 style="margin-top: 3%;">Diana Lu (c/o 2018)</h1>
-	      <p style="font-size: 25.7px; margin-bottom: 7%;">"To be honest, I wish I had an "Aha!" moment or an event that led me into pursuing a biology degree. But I don't really have one. The first bio class that I ever took was in my freshman year of high school, so I don't really recall anything but Punnett Squares. But when I took my bio introductory class at UCSC, I was learning a lot and stuff was just fascinating. And I like to learn. Science is cool and I like cool science. So I guess I am pretty cool too. Hahaha."</p>
+	      <p style="font-size: 24px; margin-bottom: 7%;">"To be honest, I wish I had an "Aha!" moment or an event that led me into pursuing a biology degree. But I don't really have one. The first bio class that I ever took was in my freshman year of high school, so I don't really recall anything but Punnett Squares. But when I took my bio introductory class at UCSC, I was learning a lot and stuff was just fascinating. And I like to learn. Science is cool and I like cool science. So I guess I am pretty cool too. Hahaha."</p>
 	    </div>
-	  </div>
-	
+  </div>
+  	</div>
 
 
-	  <div class="gallery">
-	    <img src="diana1.jpg" style="width:100%; margin-top: 0px;">
-	    <div class="content">
-	      <h1 style="margin-top: 3%;">Diana Lu (c/o 2018)</h1>
-	      <p style="font-size: 25.7px; margin-bottom: 7%;">"To be honest, I wish I had an "Aha!" moment or an event that led me into pursuing a biology degree. But I don't really have one. The first bio class that I ever took was in my freshman year of high school, so I don't really recall anything but Punnett Squares. But when I took my bio introductory class at UCSC, I was learning a lot and stuff was just fascinating. And I like to learn. Science is cool and I like cool science. So I guess I am pretty cool too. Hahaha."</p>
-	    </div>
-	  </div>
-	
 </div>
 
-<!-- 
-	div.container {
-	  position: absolute;
-	  max-width: 50%;
-	  margin: 0 auto;
-	}
 
-	div.container img {vertical-align: middle;}
-
-	div.container .content {
-	  position: absolute;
-	  bottom: 0;
-	  background: rgb(0, 0, 0); 
-	  background: rgba(0, 0, 0, 0.5);
-	  color : white; 
-	  width: 100%;
-	  height: 60%;
-	  padding: 20px;
-	}
--->
-
-
+</center>
 </body>
 </html>
